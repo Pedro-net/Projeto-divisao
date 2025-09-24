@@ -8,11 +8,11 @@ def calcular():
         total_alunos = int(entry_alunos.get())
 
         empresas = {
-            "Barão": 0.32,
-            "Anglo": 0.04,
-            "Ateneu": 0.18,
-            "Liceu Médio": 0.18,
-            "Instituto": 0.28
+            "empresa1": 0.32,
+            "empresa2": 0.04,
+            "empresa3": 0.18,
+            "empresa4": 0.18,
+            "empresa5": 0.28
         }
 
         resultado = ""
@@ -41,11 +41,5 @@ btn = tk.Button(root, text="Calcular", command=calcular)
 btn.grid(row=2, columnspan=2, pady=10)
 
 root.mainloop()
-
-def print_hi(name):
-    print(f'Hi, {name}')
-
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
 
