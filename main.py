@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
+
 def calcular():
     try:
         valor_str = entry_valor.get()
@@ -10,31 +11,29 @@ def calcular():
 
         total_alunos = int(entry_alunos.get())
 
-      
-        barao = 0.32
-        anglo = 0.04
-        ateneu = 0.18
-        liceu = 0.18
-        instituto = 0.28
+        empresa1 = 0.32
+        empresa2 = 0.04
+        empresa3 = 0.18
+        empresa4 = 0.18
+        empresa5 = 0.28
 
-        valor_barao = valor_bruto * barao
-        valor_anglo = valor_bruto * anglo
-        valor_ateneu = valor_bruto * ateneu
-        valor_liceu = valor_bruto * liceu
-        valor_instituto = valor_bruto * instituto
-        
-        alunos_barao = total_alunos * barao
-        alunos_anglo = total_alunos * anglo
-        alunos_ateneu = total_alunos * ateneu
-        alunos_liceu = total_alunos * liceu
-        alunos_instituto = total_alunos * instituto
+        valor_barao = valor_bruto * empresa1
+        valor_anglo = valor_bruto * empresa2
+        valor_ateneu = valor_bruto * empresa3
+        valor_liceu = valor_bruto * empresa4
+        valor_instituto = valor_bruto * empresa5
 
-        
-        resultado = "Barão: R$ " + str(round(valor_barao, 2)) + " | Alunos: " + str(round(alunos_barao)) + "\n"
-        resultado += "Anglo: R$ " + str(round(valor_anglo, 2)) + " | Alunos: " + str(round(alunos_anglo)) + "\n"
-        resultado += "Ateneu: R$ " + str(round(valor_ateneu, 2)) + " | Alunos: " + str(round(alunos_ateneu)) + "\n"
-        resultado += "Liceu: R$ " + str(round(valor_liceu, 2)) + " | Alunos: " + str(round(alunos_liceu)) + "\n"
-        resultado += "Instituto: R$ " + str(round(valor_instituto, 2)) + " | Alunos: " + str(round(alunos_instituto))
+        alunos_barao = total_alunos * empresa1
+        alunos_anglo = total_alunos * empresa2
+        alunos_ateneu = total_alunos * empresa3
+        alunos_liceu = total_alunos * empresa4
+        alunos_instituto = total_alunos * empresa5
+
+        resultado = "empresa1: R$ " + str(round(valor_barao, 2)) + " | Alunos: " + str(round(alunos_barao)) + "\n"
+        resultado += "empresa2: R$ " + str(round(valor_anglo, 2)) + " | Alunos: " + str(round(alunos_anglo)) + "\n"
+        resultado += "empresa3: R$ " + str(round(valor_ateneu, 2)) + " | Alunos: " + str(round(alunos_ateneu)) + "\n"
+        resultado += "empresa4: R$ " + str(round(valor_liceu, 2)) + " | Alunos: " + str(round(alunos_liceu)) + "\n"
+        resultado += "empresa5: R$ " + str(round(valor_instituto, 2)) + " | Alunos: " + str(round(alunos_instituto))
 
         messagebox.showinfo("Distribuição", resultado)
 
